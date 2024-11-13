@@ -1,0 +1,239 @@
+#main-nav {
+  background-color: #ED1D24;
+  padding: 1.5vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  box-sizing: border-box;
+  height: 45px;
+  z-index: 1000;
+}
+
+nav a {
+  font-family: 'Impact', 'Arial Black', sans-serif;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  margin: 0px 10px;
+  padding: 5px;
+}
+
+#main-nav.sticky {
+  position: fixed;
+  top: 0;
+}
+
+nav a.active {
+  color: #1e1e1e;
+  background: white;
+}
+
+nav a:hover {
+  background-color: #000000;
+  color: white;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+.container_global{
+  display: flex;
+  flex-direction:row;
+  align-items: center;
+  justify-content: flex-start;
+  width: 99.1vw;
+  min-height: 100vh; /* Ocupa al menos toda la altura de la ventana */
+  background-color: #000000; /* Fondo negro, como solicitaste para el estilo de la aplicación de cómics */
+  padding-top: 60px; /* Añade espacio en la parte superior para evitar que el contenido quede detrás del navbar */
+  box-sizing: border-box;
+  justify-content: center;
+}
+
+.options1 {
+  padding: 20px;
+  background-color: #000000;
+  font-family: Arial, sans-serif;
+  color: #333;
+  margin-top: 40px;
+}
+
+.frase1 {
+  font-family: 'Impact', 'Arial Black', sans-serif;
+  font-weight: bold;
+  font-size: 4.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #ED1D24;
+}
+
+.container_comics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6vh;
+  justify-content: center;
+}
+
+.imagen_comics{
+  width: 350px;
+  height: 535px;
+  max-width: 350px; /* Controla el tamaño máximo de las imágenes, las imagenes tienen que ser asi de grandes : 350 × 535 px */
+  border-radius: 8px;
+  object-fit:cover;
+  margin-top: 10px;
+  justify-content: center;
+}
+
+.titulo_comics{
+  width: 100%;
+  height: 8vh;
+  justify-content: center;
+}
+
+.botton_favorito{
+  width: 95%;
+  height: 6vh;
+  margin: 10px;
+  display: flex;
+  justify-content: flex-end;
+  color: #ffffff;
+}
+
+.favorito-icon{
+  width: 5vh;
+  height: 5vh;
+  
+}
+
+.favorito-icon.favorito{
+  fill: #fff200;
+  
+}
+
+.comic_impresos {
+  font-family: 'Impact', 'Arial Black', sans-serif;
+  font-weight: bold;
+  background-color: #000000;
+  border: 1px solid #000000;
+  border-radius: 8px;
+  /*padding: 10px;*/
+  width: 350px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  color: #ffffff;
+}
+
+.comic_impresos:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 600px) {
+  .comic_impresos {
+    font-size: 3vw; /* Ajuste del tamaño de fuente a unidades relativas */
+    padding-top: 0vh; /* Reducir el padding superior */
+    padding-bottom: 0vh; /* Reducir el padding inferior */
+  }
+}
+
+/* Ajustes para tabletas */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .comic_impresos {
+    font-size: 2.5vh; /* Tamaño de fuente intermedio */
+    padding-top: 0vh; /* Ajustar padding */
+    padding-bottom: 0vh; /* Ajustar padding */
+  }
+}
+
+/* Ajustes para pantallas grandes */
+@media (min-width: 1025px) {
+  .comic_impresos {
+    font-size: 2vh; /* Mantener el tamaño de fuente original */
+    padding-top: 0vh; /* Padding original */
+    padding-bottom: 0vh; /* Padding original */
+  }
+}
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup-content {
+  width: 50%;
+  height: 90%;
+  overflow-y: auto; 
+  padding: 20px; 
+  background-color: #000000;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
+  border: 1vh solid #ff0000;
+  border-radius: 12px;
+  display: grid;
+  justify-content: center;
+}
+
+.popup-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-top: 10px;
+  
+}
+
+button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+.characters{
+  display: grid; 
+  justify-content: center;
+}
+
+.imagen_characters{
+  width: 250px;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+}
+
+.texto_popup_titulos{
+  font-family: 'Impact', 'Arial Black', sans-serif;
+  font-weight: bold;
+  color: #ED1D24;
+  display: flex;
+  justify-content: center;
+  padding-top: 2vh;
+}
+
+.texto_popup{
+  font-family: 'Impact', 'Arial Black', sans-serif;
+  font-weight: bold;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+}

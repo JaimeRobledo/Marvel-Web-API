@@ -12,7 +12,6 @@ export default function GetComics ({ mostrarFavoritos }) {
     const [comicSeleccionado, setComicSeleccionado] = useState(null);
     const [characters, setCharacters] = useState([]);
     const [offset, setOffset] = useState(0);
-    const [isLoading, setIsLoading] = useState(false);
     const [favorito, setFavorito]= useState(() => {
         const savedFavorites = localStorage.getItem("favorito");
         return savedFavorites ? JSON.parse(savedFavorites) : [];

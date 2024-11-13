@@ -44,10 +44,10 @@ nav a:hover {
   flex-direction:row;
   align-items: center;
   justify-content: flex-start;
-  width: 99.1vw;
-  min-height: 100vh; /* Ocupa al menos toda la altura de la ventana */
-  background-color: #000000; /* Fondo negro, como solicitaste para el estilo de la aplicación de cómics */
-  padding-top: 60px; /* Añade espacio en la parte superior para evitar que el contenido quede detrás del navbar */
+  width: 100vw;
+  min-height: 100vh;
+  background-color: #000000;
+  padding-top: 60px; 
   box-sizing: border-box;
   justify-content: center;
 }
@@ -133,31 +133,27 @@ nav a:hover {
 }
 
 
-
-/* Ajustes para pantallas pequeñas */
 @media (max-width: 600px) {
   .comic_impresos {
-    font-size: 3vw; /* Ajuste del tamaño de fuente a unidades relativas */
-    padding-top: 0vh; /* Reducir el padding superior */
-    padding-bottom: 0vh; /* Reducir el padding inferior */
+    font-size: 3vw; 
+    padding-top: 0vh; 
+    padding-bottom: 0vh; 
   }
 }
 
-/* Ajustes para tabletas */
 @media (min-width: 601px) and (max-width: 1024px) {
   .comic_impresos {
-    font-size: 2.5vh; /* Tamaño de fuente intermedio */
-    padding-top: 0vh; /* Ajustar padding */
-    padding-bottom: 0vh; /* Ajustar padding */
+    font-size: 2.5vh;
+    padding-top: 0vh;
+    padding-bottom: 0vh;
   }
 }
 
-/* Ajustes para pantallas grandes */
 @media (min-width: 1025px) {
   .comic_impresos {
-    font-size: 2vh; /* Mantener el tamaño de fuente original */
-    padding-top: 0vh; /* Padding original */
-    padding-bottom: 0vh; /* Padding original */
+    font-size: 2vh;
+    padding-top: 0vh;
+    padding-bottom: 0vh;
   }
 }
 
